@@ -1,0 +1,31 @@
+Now imagine that: I get a server hardware.
+
+1, I install the Debian GNU/Linux on it.
+	How to install the os?
+	a, Use the usb to book.
+	b, It is best without X now.
+	c, And don't forget to install openssh-server to let you connect it.
+
+2, I will install software on it to make the environment fit me well.
+	openssh-server
+	sources.list
+	nfs-common
+	vim
+	sudo
+	tmux
+	git
+	wget
+	zsh 
+	oh-my-zsh (sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)")
+	w3m
+
+	If you need X.
+	i3
+	xfce4-terminal
+	sakura
+	chromium
+
+3, I should install some server software now.
+	vsftpd
+	apache2
+	webalizer
