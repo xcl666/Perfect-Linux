@@ -1,0 +1,3 @@
+sudo visudo
+Add one line in it:
+	%sudo ALL=NOPASSWD: ALL	

@@ -1,0 +1,11 @@
+Install “command-not-found”:
+
+	1, $sudo apt intall command-not-found
+
+	2,  $sudo apt-file update
+
+			$sudo update-command-not-found
+
+After above, you can use command-not-found on bash shell now. Next is zsh:
+
+Add one time in the .zshrc:  plugins=(command-not-found)

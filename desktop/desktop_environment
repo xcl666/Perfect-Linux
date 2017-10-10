@@ -1,3 +1,7 @@
+sudo cp sources.list /etc/apt/
+
+sudo apt install vim sudo tmux git wget zsh fcitx-googlepinyin w3m shadowsocks-libev command-not-found python3-pip fortune
+
 Now imagine that: I get a server hardware.
 1, I install the Debian GNU/Linux on it.
 	How to install the os?
@@ -5,6 +9,7 @@ Now imagine that: I get a server hardware.
 	b, It is best without X now.
 2, I will install software on it to make the environment fit me well.
 	sources.list
+	fortune
 	nfs-common
 	vim
 	sudo
@@ -16,3 +21,5 @@ Now imagine that: I get a server hardware.
 	fcitx
 	w3m
 	shadowsocks-libev
+	command-not-found
+	cheat

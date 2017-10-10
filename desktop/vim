@@ -1,0 +1,3 @@
+sudo apt install vim
+cp .vimrc ~/
+cp -r .vim ~/

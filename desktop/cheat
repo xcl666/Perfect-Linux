@@ -1,0 +1,3 @@
+sudo apt install python python-pip
+
+sudo pip install cheat
