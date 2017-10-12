@@ -49,9 +49,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(vi-mode)
-plugins=(command-not-found)
+plugins=(git command-not-found vi-mode)
 
 # User configuration
 
@@ -97,6 +95,7 @@ alias u="sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrad
 alias uu="sudo apt-get autoremove && sudo apt-get clean && sudo apt-get autoclean && sudo apt-get remove"
 alias ssl="ss-local -c /home/xcl/example.json &"
 alias p="proxychains w3m google.com/ncr"
+alias pw="python3 -m http.server 8877"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
