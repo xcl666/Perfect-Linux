@@ -1,0 +1,53 @@
+$ lspci 
+
+go https://wiki.debian.org/WiFi to find your wireless firmware driver
+
+Add non-free on your /etc/apt/sources.list
+
+$ sudo apt update
+
+$ apt install firmware-(what your driver is)
+
+$ sudo shutdown -r now
+
+# ip a
+
+# iwconfig
+
+# ip link set wlan0 up
+
+# iwlist scan
+
+# vi /etc/network/interfaces
+
+auto wlan0
+
+iface wlan0 inet dhcp
+
+    wireless-essid  [ESSID]
+
+    wireless-mode [MODE]
+
+# chmod 0600 /etc/network/interfaces
+
+# wpa_passphrase myssid my_very_secret_passphrase
+
+network={
+ssid="myssid"
+#psk="my_very_secret_passphrase"
+psk=ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
+}
+
+# sensible-editor /etc/network/interfaces
+
+auto wlan0
+
+iface wlan0 inet dhcp
+
+   wpa-ssid myssid
+
+   wpa-psk ccb290fd4fe6b22935cbae31449e050edd02ad44627b16ce0151668f5f53c01b
+
+# ifup wlan0
+
+
