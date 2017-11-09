@@ -6,6 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="ys"
+#ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +50,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git command-not-found vi-mode)
+plugins=(git command-not-found vi-mode autojump colored-man-pages zsh-syntax-highlighting zsh zsh-autosuggestions z)
 
 # User configuration
 
@@ -83,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 fortune
+#if [ -s ~/.Xmodmap]; then
+#	xmodmap ~/.Xmodmap
+#fi
 #calendar
 #fortune-zh
 export EDITOR=/usr/bin/vim
