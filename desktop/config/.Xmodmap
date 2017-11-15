@@ -1,0 +1,9 @@
+keycode 66 = Control_L
+clear Lock
+add Control = Control_L
+keycode 51 = BackSpace
+keycode 22 = backslash bar backslash bar
+keycode 49 = Escape NoSymbol Escape
+keycode 9 = grave asciitilde grave asciitilde
+keycode 23 = Tab Caps_Lock Tab Caps_Lock
+keycode 108 = Delete NoSymbol Delete
