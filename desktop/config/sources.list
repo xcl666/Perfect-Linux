@@ -1,21 +1,35 @@
 # 
 
-# deb cdrom:[Debian GNU/Linux 9.1.0 _Stretch_ - Official amd64 xfce-CD Binary-1 20170722-11:29]/ stretch main
+# deb cdrom:[Debian GNU/Linux 8.5.0 _Jessie_ - Official amd64 CD Binary-1 20160604-15:35]/ stretch main
 
-#deb cdrom:[Debian GNU/Linux 9.1.0 _Stretch_ - Official amd64 xfce-CD Binary-1 20170722-11:29]/ stretch main
-
-deb http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free
-
-deb http://mirrors.ustc.edu.cn/debian/ stretch-backports main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian/ stretch-backports main contrib non-free
-
-deb http://security.debian.org/debian-security stretch/updates main contrib non-free
-deb-src http://security.debian.org/debian-security stretch/updates main contrib non-free
+#deb cdrom:[Debian GNU/Linux 8.5.0 _Jessie_ - Official amd64 CD Binary-1 20160604-15:35]/ stretch main
 
 
 # stretch-updates, previously known as 'volatile'
-deb http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free
+# A network mirror was not selected during install.  The following entries
+# are provided as examples, but you should amend them as appropriate
+# for your mirror of choice.
+#
+#deb http://mirrors.aliyun.com/debian stretch main contrib non-free
 
-deb http://http.debian.net/debian stretch main contrib
+deb http://mirrors.aliyun.com/debian-security/ stretch/updates main contrib non-free
+deb-src http://mirrors.aliyun.com/debian-security/ stretch/updates main contrib non-free
+
+## Debian mirror
+
+# Base repository
+deb http://mirrors.aliyun.com/debian stretch main contrib non-free
+deb-src http://mirrors.aliyun.com/debian stretch main contrib non-free
+
+# Stable updates
+deb http://mirrors.aliyun.com/debian stretch-updates main contrib non-free
+deb-src http://mirrors.aliyun.com/debian stretch-updates main contrib non-free
+
+# Stable backports
+deb http://mirrors.aliyun.com/debian stretch-backports main contrib non-free
+deb-src http://mirrors.aliyun.com/debian stretch-backports main contrib non-free
+
+deb http://security.debian.org/ stretch/updates main
+deb-src http://security.debian.org/ stretch/updates main
+ deb http://ftp.debian.org/debian/ stretch-updates main
+ deb-src http://ftp.debian.org/debian/ stretch-updates main
