@@ -5,7 +5,8 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
+ZSH_THEME="random"
 #ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -97,10 +98,18 @@ alias t="tmux"
 alias s="source ~/.zshrc"
 alias u="sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade"
 alias uu="sudo apt-get autoremove && sudo apt-get clean && sudo apt-get autoclean && sudo apt-get remove"
-alias ssl="ss-local -c /home/xcl/example.json &"
+alias ssl="nohup ss-local -c /home/xcl/example.json &"
 alias p="proxychains w3m google.com/ncr"
 alias pw="python3 -m http.server 8877"
+alias work="cat ~/work/personal/time20180624.txt"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Install Ruby Gems to ~/work/gems
+export GEM_HOME=$HOME/work/gems
+export PATH=$HOME/work/gems/bin:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export BROWSER=chromium
