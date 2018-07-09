@@ -1,14 +1,11 @@
-set number
-set sw=2
-set ts=2
-set autoindent
-syntax on
-autocmd BufRead *.py nmap <F5> :w<CR>:!python %<CR><CR>
-filetype plugin on
-set nocp
-set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,chinese,cp936
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+set runtimepath+=~/.vim_runtime
+
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
+
+try
+source ~/.vim_runtime/my_configs.vim
+catch
+endtry
